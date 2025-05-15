@@ -1,3 +1,33 @@
+// 'use client';
+// import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+
+// const containerStyle = {
+//   width: '100%',
+//   height: '450px'
+// };
+
+// const center = {
+//   lat: 24.9846,
+//   lng: 121.3391
+// };
+
+// export default function MyGoogleMap() {
+//   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
+
+//   return (
+//     <LoadScript googleMapsApiKey={apiKey}>
+//       <GoogleMap
+//         mapContainerStyle={containerStyle}
+//         center={center}
+//         zoom={14}
+//       >
+//         {/* 加入標記 */}
+//         <Marker position={center} />
+//       </GoogleMap>
+//     </LoadScript>
+//   );
+// }
+
 export default function GoogleMap() {
     const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
     const src="https://maps.google.com/maps?q=24.9846,121.3391&z=14&output=embed"
@@ -12,6 +42,7 @@ export default function GoogleMap() {
       </div>
     );
   }
+
 // import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 // const containerStyle = {
